@@ -27,10 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['8000-kylemardell-djangoblog-2eb0k20xayo.ws-eu115.gitpod.io', '.herokuapp.com']
-
+ALLOWED_HOSTS = ['8000-kylemardell-djangoblog-yx8khxkaewd.ws.codeinstitute-ide.net', '.herokuapp.com']
 
 # Application definition
 
@@ -41,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_summernote',
     'blog',
 ]
 
@@ -90,7 +90,7 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://8000-kylemardell-djangoblog-2eb0k20xayo.ws-eu115.gitpod.io",
+     'https://8000-kylemardell-djangoblog-yx8khxkaewd.ws.codeinstitute-ide.net',
     "https://*.herokuapp.com"
 ]
 
